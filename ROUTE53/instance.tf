@@ -17,7 +17,7 @@ resource "aws_instance" "IP_example" {
 
   user_data = <<EOF
     #! /bin/bash
-                sudo yum update -y
+    sudo yum update -y
     sudo yum install -y httpd.x86_64
     sudo service httpd start
     sudo service httpd enable
