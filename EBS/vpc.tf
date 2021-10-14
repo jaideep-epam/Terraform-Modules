@@ -22,6 +22,7 @@ resource "aws_subnet" "public_1" {
   availability_zone       = "us-east-1a"
   vpc_id                  = aws_vpc.vpc_demo.id
   map_public_ip_on_launch = true
+  # cidr block depends on us 
   cidr_block              = "10.0.1.0/24"
 
   tags = {
