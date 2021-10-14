@@ -1,4 +1,5 @@
 resource "aws_ebs_volume" "ebs_volume" {
+  #region depends on you
   availability_zone = "us-east-1a"
   size              = 20
   type              = "gp2"
